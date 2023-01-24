@@ -1,0 +1,13 @@
+if datos 
+    h1 Tareas del mes 
+    p MES: #{datos.p2023.MESES.m1.nombre}
+    p Dia: #{datos.p2023.MESES.m1.DIAS.d1.nombre}
+    p Tarea: #{datos.p2023.MESES.m1.DIAS.d1.TAREAS.t1.descripcion}
+
+    ul
+        each val, key in datos.p2023.MESES.m1.DIAS.d1.TAREAS
+            li= key + ': ' + val
+else 
+    p datos no encontrados
+
+

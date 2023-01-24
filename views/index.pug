@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Crear tarea
+  
+  form(action='', method='')
+    p Fecha
+    input(type='date', name='fecha', value='')
+    p Descripcion de la tarea
+    textarea(name="", cols="30", rows="10") 
+    p
+    input(type='submit', value='Crear')
