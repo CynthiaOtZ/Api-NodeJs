@@ -1,31 +1,16 @@
 {
-    "p2023": {
-        "MESES": {
-         "m1": {
-            "id": "01",
-            "nombre": "Enero",
-            "DIAS": {
-                "d1": 
-                {
-                    "id": "1",
-                    "nombre": "Lunes",
-                    "TAREAS": {
-                        "t1": {
-                            "id": "t1",
-                            "descripcion": "Esta es la descripcion de la tarea"
-                        },
-                        "t2": {
-                            "id": "t2",
-                            "descripcion": "Esta es la descripcion de la tarea 2"
-                        }
-                    }
-                }
-            }
-         },
-         "m2": {
-            "id": "02",
-            "nombre": "Febrero"
-         }
-        }
-    }
+    "USER": [{
+        "id": "U001",
+        "nombre": "Cynthia"
+    }],
+    "TASK":[{
+        "id": "T001",
+        "fecha": "24/01/2023",
+        "descripcion": "Esta es la tarea que debo hacer el martes 24 de enero"
+    },
+    {
+        "id": "T002",
+        "fecha": "25/01/2023",
+        "descripcion": "Esta es la tarea que debo hacer el miercoles 25 de enero"
+    }]
 }

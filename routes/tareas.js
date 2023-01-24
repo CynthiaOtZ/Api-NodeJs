@@ -12,7 +12,30 @@ router.get('/', function(peticion, respuesta) {
         console.log("Error en leer archivo");
         throw error;        
     } else {
-        respuesta.render('tareas', {datos: JSON.parse(datos)})
+        //respuesta.render('tareas', {datos: JSON.parse(datos)})
+        //Parsear los datos
+        
+        /*var planner = JSON.parse((datos), (key,value) =>{
+          console.log(value.);        
+        })*/
+
+        var planner = [];
+        var USER = [];
+        var TASK = [];
+
+        planner.push(JSON.parse(datos));
+    
+        for (let i=0; i<planner.length;i++)
+        {
+          //console.log(planner[i]);
+          USER.push(planner[i].USER);
+          TASK.push(planner[i].TASK)
+        }
+
+        respuesta.render('tareas', {user: USER, task: TASK})
+        console.log(USER);
+        console.log(TASK);
+
     }
   })
 });

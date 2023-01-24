@@ -1,12 +1,16 @@
-if datos 
-    h1 Tareas del mes 
-    p MES: #{datos.p2023.MESES.m1.nombre}
-    p Dia: #{datos.p2023.MESES.m1.DIAS.d1.nombre}
-    p Tarea: #{datos.p2023.MESES.m1.DIAS.d1.TAREAS.t1.descripcion}
+if user 
+    
+    h1 Tareas del mes   
+    
+    each val, index in user
 
-    ul
-        each val, key in datos.p2023.MESES.m1.DIAS.d1.TAREAS
-            li= key + ': ' + val
+        h3 USUARIO
+        p Nombre: #{user[index][index].nombre}
+
+        h3 TAREAS
+        each val1, index1 in task[0]
+            p Fecha: #{task[0][index1].fecha}
+            p Tarea: #{task[0][index1].descripcion}
 else 
     p datos no encontrados
 
