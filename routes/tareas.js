@@ -2,23 +2,26 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');
 
+
+router.get("/", function(peticion, respuesta){
+  respuesta.render('tareas');
+});
+
+
 /* GET home page. */
-router.get('/', function(peticion, respuesta) {
+router.get('/:ID', function(peticion, respuesta) {
   //respuesta.render('tareas');
 
-  //LEER ARCHIVO JSON
+  if(!peticion.params.ID){
+    console.log("Error");
+  }
+  else {
+    //LEER ARCHIVO JSON
   fs.readFile('./public/archivos/planner2023.json', (error,datos)=>{
     if (error) {
         console.log("Error en leer archivo");
         throw error;        
     } else {
-        //respuesta.render('tareas', {datos: JSON.parse(datos)})
-        //Parsear los datos
-        
-        /*var planner = JSON.parse((datos), (key,value) =>{
-          console.log(value.);        
-        })*/
-
         var planner = [];
         var USER = [];
         var TASK = [];
@@ -38,6 +41,10 @@ router.get('/', function(peticion, respuesta) {
 
     }
   })
+
+  }
+
+  
 });
 
 module.exports = router;

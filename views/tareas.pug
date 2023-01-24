@@ -5,13 +5,13 @@ if user
     each val, index in user
 
         h3 USUARIO
-        p Nombre: #{user[index][index].nombre}
+        p Nombre: #{user[0][index].nombre}
 
         h3 TAREAS
         each val1, index1 in task[0]
             p Fecha: #{task[0][index1].fecha}
             p Tarea: #{task[0][index1].descripcion}
 else 
-    p datos no encontrados
+    p Datos no encontrados
 
 
