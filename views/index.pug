@@ -2,11 +2,15 @@ extends layout
 
 block content
   h1 Crear tarea
+
+  p Usuario 
+  input#id(type="text" name="user" value="U001")
   
-  form(action='', method='')
-    p Fecha
-    input(type='date', name='fecha', value='')
-    p Descripcion de la tarea
-    textarea(name="", cols="30", rows="10") 
-    p
-    input(type='submit', value='Crear')
+  p Fecha
+  input#fecha(type='date', name='fecha', value='')
+
+  p Descripcion de la tarea
+  textarea#descripcion(name="", cols="30", rows="10") 
+
+  p
+  button(onClick="crear()") Crear
