@@ -1,16 +1,18 @@
 extends layout
 
 block content
-  h1 Crear tarea
-
-  p Usuario 
-  input#id(type="text" name="user" value="U001")
-  
-  p Fecha
-  input#fecha(type='date', name='fecha', value='')
-
-  p Descripcion de la tarea
-  textarea#descripcion(name="", cols="30", rows="10") 
+  h1 Menú de opciones
 
   p
-  button(onClick="crear()") Crear
+  button(type='submit' onclick="")
+    a(href="/crear") Nueva tarea 
+
+  p
+  button(type='submit' onclick="")
+    a(href="/tareas/U001") Mis tareas 
+
+  p
+  button(type='submit' onclick="") Eliminar tarea
+
+  p
+  button(type='submit' onclick="") Actualizar tarea

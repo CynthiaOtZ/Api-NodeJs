@@ -1,0 +1,18 @@
+h1 Crear tarea
+
+form(action="", method="POST") 
+    p Usuario 
+    input#id(type="text" name="user" value="U001" readonly)
+    
+    p Fecha
+    input#fecha(type='date', name='date', value='')
+    
+    p Descripcion de la tarea
+    textarea#descripcion(name="desc", cols="30", rows="10") 
+    
+    p
+    input(type="submit", value="crear")
+
+    p
+    button(type='submit' onclick="")
+        a(href="/") Inicio

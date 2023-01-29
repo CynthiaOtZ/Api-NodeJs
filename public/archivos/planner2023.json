@@ -1,16 +1,1 @@
-{
-    "USER": [{
-        "id": "U001",
-        "nombre": "Cynthia"
-    }],
-    "TASK":[{
-        "id": "T001",
-        "fecha": "24/01/2023",
-        "descripcion": "Esta es la tarea que debo hacer el martes 24 de enero"
-    },
-    {
-        "id": "T002",
-        "fecha": "25/01/2023",
-        "descripcion": "Esta es la tarea que debo hacer el miercoles 25 de enero"
-    }]
-}
+{"USER":[{"id":"U001","nombre":"Cynthia"}],"TASK":[{"id":"1","fecha":"2023/01/24","descripcion":"Esta es la tarea que debo hacer el martes 24 de enero"},{"id":"2","fecha":"2023/01/25","descripcion":"Esta es la tarea que debo hacer el miercoles 25 de enero"},{"id":"3","fecha":"2023-01-26","descripcion":"tarea desdde formulario 2"},{"id":"4","fecha":"2023-01-28","descripcion":"Tarea desde formulario prueba"}]}
