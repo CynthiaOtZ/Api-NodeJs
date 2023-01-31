@@ -1,8 +1,12 @@
 h1 Eliminar tarea
 
-select#tareas(name="tarea") 
-    option(value="txt1") Opcion 1 
+form(action="", method="POST") 
+  p Descripción de la Tarea
+  select(name="desc")
+    each variable in task
+      option(value=variable.id) #{variable.descripcion}
 
-select
-  each variable in variables
-    option(value=variable.id) #{variable.var_name}
+  p
+    input(type="submit", value="Eliminar tarea")
+
+
