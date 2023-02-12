@@ -8,10 +8,19 @@ if user
         p Nombre: #{user[0][index].nombre}
 
         h3 TAREAS
-        each val1, index1 in task[0]
-            p Fecha: #{task[0][index1].fecha}
-            p Tarea: #{task[0][index1].descripcion}
-    
+        p
+        form(action="", method="get") 
+            each val1, index1 in task[0]
+                p Fecha: #{task[0][index1].fecha}
+                p Tarea: #{task[0][index1].descripcion}
+                p
+                button(type="submit" id=task[0][index1].id) Actualizar
+                a(href="/actualizar/") Actualizar
+                
+    p 
+    p 
+    p 
+    p 
     button(type='submit' onclick="")
         a(href="/") Inicio
 else 
